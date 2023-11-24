@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreatePage</title>
+</head>
+<body>
+    <form method="post" action="{% url 'create-page' %}">
+        <h1>Create Employee</h1>
+        {{ form.as_p }}
+        <button>Create</button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>

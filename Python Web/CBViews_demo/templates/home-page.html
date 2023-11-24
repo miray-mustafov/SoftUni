@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomepageTab</title>
+</head>
+<body>
+<a href="{% url 'home-page' %}">
+    <h1>THIS IS HOMEPAGE</h1>
+</a>
+<a href="{% url 'register-page' %}">
+    <h1>go to register</h1>
+</a>
+
+<a href="{% url 'create-page' %}">
+    <h1>go to create</h1>
+</a>
+
+{% for emp in employees %}
+
+    <a href="{% url 'details-page' pk=emp.pk %}">
+        <p>
+            {{ emp.name }} from {{ emp.department.name }} is
+            {{ emp.age }} years old.
+        </p>
+    </a>
+{% endfor %}
+
+
+<div class="imgBx" id={{ photo.id }}>
+    <img src="{{ photo.photo }}">
+</div>
+
+</body>
+</html>

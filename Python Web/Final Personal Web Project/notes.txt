@@ -1,0 +1,4 @@
+Web Store:
+	there are standart customer that can buy stuff.
+	Add seller group. If customer is with seller status he can share goods.
+	Add functionality for the customer to become seller also..

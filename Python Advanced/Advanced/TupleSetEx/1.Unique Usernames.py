@@ -1,0 +1,1 @@
+#bahti smeshnata zadacha

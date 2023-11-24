@@ -1,0 +1,21 @@
+{
+    "window.zoomLevel": 1.5,
+    "launch": {
+
+    
+
+        
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${file}",
+            }
+        ],
+        "compounds": []
+    },
+    "workbench.colorTheme": "Default High Contrast",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editor.enablePreview": false,
+}

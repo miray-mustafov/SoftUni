@@ -1,0 +1,18 @@
+{
+  "name": "sokemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha t1.js"
+  },
+  "keywords": [
+    "sokemo",
+    "azanamo"
+  ],
+  "author": "miraiskiq we",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegPageTab</title>
+</head>
+<body>
+    <a href="{% url 'register-page' %}">
+        <h1>THIS IS REGISTER PAGE</h1>
+    </a>
+    <a href="{% url 'home-page' %}">
+        <h1>go to homepage</h1>
+    </a>
+    <form method="post" action="{% url 'register-page' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add</button>
+    </form>
+    <div>
+        {{ filtered_employees }}
+    </div>
+</body>
+</html>
